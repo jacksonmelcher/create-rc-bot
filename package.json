@@ -1,0 +1,33 @@
+{
+  "name": "create-rc-bot",
+  "version": "1.0.0",
+  "description": "CLI tool to quickly create a RingCentral MVP bot",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksonmelcher/create-rc-bot.git"
+  },
+  "keywords": [
+    "Glip",
+    "RingCentral",
+    "Bot"
+  ],
+  "bin": {
+    "create-rc-bot": "./src/index.js"
+  },
+  "files": [
+    "src/index.js"
+  ],
+  "author": "Jackson Melcher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacksonmelcher/create-rc-bot/issues"
+  },
+  "homepage": "https://github.com/jacksonmelcher/create-rc-bot#readme",
+  "dependencies": {
+    "commander": "^9.0.0"
+  }
+}
