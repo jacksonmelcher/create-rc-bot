@@ -1,9 +1,13 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     // other properties
     "outDir": "lib",
-    "rootDir": "src",
-    "declaration": true
+    // "rootDir": "package/**/*",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "files": ["package.json"]
 }
