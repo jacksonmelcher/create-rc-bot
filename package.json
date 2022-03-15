@@ -6,8 +6,14 @@
   "files": [
     "lib/**/*"
   ],
+  "workspaces": [
+    "package/*"
+  ],
   "scripts": {
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "dev:help": "tsc && node lib/src/index.js --help",
+    "dev": "tsc && node lib/src/index.js my-bot",
+    "dev:no-name": "tsc && node lib/src/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,10 +31,11 @@
   },
   "homepage": "https://github.com/jacksonmelcher/create-rc-bot#readme",
   "dependencies": {
-    "chalk": "^5.0.1",
-    "commander": "^9.0.0"
+    "chalk": "^4.1.2",
+    "commander": "^4.1.1"
   },
   "devDependencies": {
+    "@types/node": "^17.0.21",
     "typescript": "^4.6.2"
   }
 }
