@@ -2,7 +2,8 @@
   "compilerOptions": {
     // other properties
     "outDir": "lib",
-    "rootDir": "src"
+    "rootDir": "src",
+    "declaration": true
   },
   "include": ["src/**/*"]
 }
