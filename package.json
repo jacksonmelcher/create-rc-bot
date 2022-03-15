@@ -28,6 +28,10 @@
   },
   "homepage": "https://github.com/jacksonmelcher/create-rc-bot#readme",
   "dependencies": {
+    "chalk": "^5.0.1",
     "commander": "^9.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
   }
 }
