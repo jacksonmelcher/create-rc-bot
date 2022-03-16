@@ -6,7 +6,9 @@
     // "rootDir": "package/**/*",
     "declaration": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "strict": true,
+    "types": ["node"]
   },
   "include": ["src/**/*"],
   "files": ["package.json"]
