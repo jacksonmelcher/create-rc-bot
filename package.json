@@ -4,6 +4,7 @@
   "description": "CLI tool to quickly create a RingCentral MVP bot",
   "main": "lib/index.js",
   "files": [
+    "main-template",
     "lib/**/*"
   ],
   "workspaces": [
@@ -13,7 +14,7 @@
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts my-app",
     "start:windows": "nodemon --watch 'src/**/*.ts' --exec \"npx ts-node\" src/index.ts",
     "create": "npm run build && npm run test",
-    "build": "tsc -p .",
+    "build": "tsc",
     "local": "sudo npm i -g && pizza",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
   },

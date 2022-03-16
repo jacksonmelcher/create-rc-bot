@@ -108,5 +108,43 @@ if (typeof projectName === "undefined") {
   process.exit(1);
 }
 
-console.log(__dirname);
+// let package = {
+//   name: projectName,
+//   version: "1.0.0",
+//   description: description === undefined ? "" : description,
+//   main: "src/express.js",
+//   scripts: {
+//     start: "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/express.ts",
+//     build: "rm -rf dist && tsc",
+//   },
+//   dependencies: {
+//     axios: "^0.26.1",
+//     pg: "^8.7.3",
+//     "ringcentral-chatbot": "^1.11.0",
+//   },
+//   devDependencies: {
+//     "@types/node": "^17.0.21",
+//     "dotenv-override-true": "^6.2.2",
+//     ngrok: "^4.3.1",
+//     sqlite3: "^5.0.2",
+//     "ts-node": "^10.7.0",
+//     "ts-node-dev": "^1.1.8",
+//     typescript: "^4.6.2",
+//     "yarn-upgrade-all": "^0.6.1",
+//   },
+//   repository: {
+//     type: "git",
+//     url: "git+https://github.com/jacksonmelcher/ringcentral-bot-template-ts.git",
+//   },
+//   keywords: ["template", "ringcentral", "bot", "typescript"],
+//   author: "Jackson Melcher",
+//   license: "MIT",
+//   bugs: {
+//     url: "https://github.com/jacksonmelcher/ringcentral-bot-template-ts/issues",
+//   },
+//   homepage:
+//     "https://github.com/jacksonmelcher/ringcentral-bot-template-ts#readme",
+// };
+
+// console.log(__dirname);
 fs.copySync(path.join(__dirname, "..", "main-template"), projectName);
