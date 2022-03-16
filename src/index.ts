@@ -5,13 +5,13 @@ import * as packageJson from "../package.json";
 
 // let proje÷ctName;
 
-function isUsingYarn() {
-  return (process.env.npm_config_user_agent || "").indexOf("yarn") === 0;
-}
+// function isUsingYarn() {
+//   return (process.env.npm_config_user_agent || '').indexOf('yarn') === 0;
+// }
 
 // console.log(pack.version);
 function init() {
-  let projectName;
+  let projectName: string;
 
   const program = new commander.Command(packageJson.name)
     .version(packageJson.version)
@@ -28,7 +28,7 @@ function init() {
       );
       console.log();
       console.log(
-        `    If you have any problems, do not hesitate to file an issue:`
+        "    If you have any problems, do not hesitate to file an issue:"
       );
       console.log(`      ${chalk.cyan(packageJson.bugs.url)}`);
       console.log();
